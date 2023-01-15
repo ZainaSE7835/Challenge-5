@@ -1,6 +1,10 @@
 # Challenge-5
 Password Generator
 
+
+
+![Screenshot of prompt and password generator box](assets/Capture.PNG)
+
 ##Description:
 
 The aim of this project was to create a random password generator using JavaScript.
