@@ -3,7 +3,7 @@ Password Generator
 
 
 
-![Screenshot of prompt and password generator box](assets/Capture.PNG)
+![Screenshot of prompt and password generator box](assets/Capture4.PNG)
 
 ##Description:
 
