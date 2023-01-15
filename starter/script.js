@@ -89,6 +89,10 @@ var upperCasedCharacters = [
 ];
 
 // Function to prompt user for password options
+var lowerCase = false,
+upperCase = false,
+numeric = false,
+specialCase = false;
 function getPasswordOptions() {
 
   var lowerCase = false,
@@ -129,29 +133,57 @@ function getPasswordOptions() {
     alert("Password too short. Try again");
   }
   else if (length>64) {
-    alert("passowrd too long. Try again");
+    alert("password too long. Try again");
   }
+  var charSelected = [];
+  
+  if (lowerCase) {
+    charSelected += lowerCasedCharacters;
+  }
+  
+  if (upperCase) {
+    charSelected += upperCasedCharacters;
+  }
+  
+  if (numeric) {
+    charSelected += numericCharacters;
+  }
+  
+  if (specialCase) {
+    charSelected += specialCharacters;
+  }
+  console.log(charSelected);
+
+  var result =""
+
+  for (var i=0, n= charSelected.length; i < length; ++i) {
+    result += charSelected.charAt(Math.floor(Math.random()*n));
+  }
+  return result;
+  
 }
 console.log (getPasswordOptions())
 
 
 // Function for getting a random element from an array
-function getRandom(arr) {
-
-}
+/*function getRandom(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+  }*/
 
 
 // Function to generate password with user input
-function generatePassword() {
+/*function generatePassword() {
+}*/
 
-}
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector('#generate');
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  var password = getPasswordOptions();
   var passwordText = document.querySelector('#password');
 
   passwordText.value = password;
