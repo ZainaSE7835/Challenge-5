@@ -12,7 +12,7 @@ The aim of this project was to create a random password generator using JavaScri
 ##Lessons learnt:
 - Create a series of prompts within a while loop
 - The difference between for and while loops and the purpose of each
-- Identified weak areas that need improvement e.g. accessing local variables from outside
+- Identified areas that need improvement e.g. accessing local variables from outside, prompt appears when the page loads, and the alert message "password too short. Try again" shows up when I click cancel because the value returned is null.
 
 ##Usage:
 
